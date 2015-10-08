@@ -1,0 +1,17 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+long superpower (long a, long b){
+  long superpower = 0;
+  superpower = pow(a,b);
+  return superpower;
+}
+
+int main (){
+ cout<< superpower(3,4) <<endl;
+
+ return 0;
+
+}
