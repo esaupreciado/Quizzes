@@ -1,0 +1,27 @@
+//Sum the Squares of an undeterminated number of values
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int sumsquares_list (vector<int> v){
+int len = v.size();
+int sum = 0;
+for(int i = 0; i < len; i++) {
+sum= sum + (v[i]*v[i]);
+}
+return sum;
+}
+
+int main()
+{
+int c;
+vector<int>v;
+cout<<"Please introduce a serie of values and write 0 to finish."<<endl;//0 will be the signal to stop asking for values
+cin >> c;
+while(c != 0) {
+v.push_back(c);
+cin >> c;
+}
+cout<<sumsquares_list(v)<<endl;
+return 0;
+}
